@@ -1,0 +1,157 @@
+<!doctype html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cadastro | Mundo Mais Verde</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-content">
+        <a href="index.html" class="logo">
+          <span>🌱</span>
+          Mundo Mais Verde
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <nav class="nav" id="mainNav">
+          <a href="index.html">Início</a>
+
+          <a href="index.html#sobre">Sobre nós</a>
+
+          <a href="projetos.html">Projetos</a>
+
+          <a href="index.html#como-ajudar">Como ajudar</a>
+
+          <a href="index.html#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="section-tag"> Faça parte </span>
+
+          <h1>Seja um voluntário</h1>
+
+          <p>Preencha o formulário e faça parte do Mundo Mais Verde.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="form-container">
+            <div class="form-intro">
+              <h2>Cadastro de voluntário</h2>
+
+              <p>
+                Quer ajudar a construir um futuro mais sustentável? Preencha
+                seus dados abaixo.
+              </p>
+            </div>
+
+            <form id="formCadastro">
+              <div class="form-group">
+                <label for="nome"> Nome completo </label>
+
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Digite seu nome"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email"> E-mail </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="seuemail@email.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="telefone"> Telefone </label>
+
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  placeholder="(11) 99999-9999"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="area"> Como você gostaria de ajudar? </label>
+
+                <select id="area" name="area" required>
+                  <option value="">Selecione uma opção</option>
+
+                  <option value="plantio">Plantio de árvores</option>
+
+                  <option value="reciclagem">Reciclagem</option>
+
+                  <option value="educacao">Educação ambiental</option>
+
+                  <option value="eventos">Eventos e campanhas</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem"> Conte um pouco sobre você </label>
+
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  rows="5"
+                  placeholder="Escreva uma mensagem..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="button primary form-button">
+                Enviar cadastro
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <a href="index.html" class="logo footer-logo">
+            <span>🌱</span>
+            Mundo Mais Verde
+          </a>
+
+          <p>Juntos por um futuro mais sustentável.</p>
+        </div>
+
+        <p>© 2026 Mundo Mais Verde. Projeto fictício para fins educacionais.</p>
+      </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
